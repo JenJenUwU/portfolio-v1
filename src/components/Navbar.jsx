@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
@@ -27,7 +28,11 @@ const Navbar = () => {
             <span className="sm:block hidden">| JenJenUwU</span>
           </p>
         </Link>
-        <ul className={"list-non hidden sm:flex flex-row gap-10"}>
+        <ul
+          className={
+            "list-non hidden sm:flex justify-between items-center gap-10"
+          }
+        >
           {navLinks.map((link) => (
             <li
               key={link.id}
@@ -41,8 +46,25 @@ const Navbar = () => {
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
+          <div className="icon-container" style={{ display: "flex" }}>
+            <a
+              href="https://github.com/JenJenUwU"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ marginRight: "10px" }}
+            >
+              <FaGithub size={30} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/jay-lin-65599824b"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin size={30} />
+            </a>
+          </div>
         </ul>
-        <div className={"sm:hidden flex flex-1 justify-end items-center"}>
+        <div className={"sm:hidden flex flex-1 justify-between items-center"}>
           <img
             src={toggle ? close : menu}
             alt={"menu"}
