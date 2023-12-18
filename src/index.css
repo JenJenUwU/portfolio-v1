@@ -19,6 +19,9 @@
     display: block;
 }
 
+.black-transparent {
+    background: rgba(0, 0, 0, 0.5);
+}
 .black-gradient {
     background: rgba(0, 0, 0, 0.5); /* fallback for old browsers */
     background: -webkit-linear-gradient(
