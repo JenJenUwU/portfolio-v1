@@ -7,13 +7,13 @@ const Computers = ({ isMobile }) => {
 
   return (
     <mesh>
-      <hemisphereLight intensity={1.75} groundColor={"black"} />
+      <hemisphereLight intensity={1} groundColor={"black"} />
       <pointLight intensity={1} />
       <spotLight position={[-20, 50, 10]} castShadow />
       <primitive
         object={computer.scene}
         scale={isMobile ? 0.5 : 0.75}
-        position={isMobile ? [0, -3, -1.5] : [0, -3.75, -1.5]}
+        position={isMobile ? [0, -3, -1.5] : [0, -3.25, -1.5]}
         rotation={[0, -0.2, 0]}
       />
     </mesh>
@@ -25,11 +25,13 @@ const Gura = ({ isMobile }) => {
 
   return (
     <mesh>
-      <hemisphereLight intensity={3} groundColor={"black"} />
+      <hemisphereLight intensity={1} groundColor={"black"} />
+      <pointLight intensity={1} />
+      <spotLight position={[0, 0, 0]} castShadow />
       <primitive
         object={object.scene}
         scale={isMobile ? 0.5 : 0.75}
-        position={isMobile ? [-1, -2.85, 2] : [-1.5, -3.5, 4]}
+        position={isMobile ? [-1, -2.85, 2] : [-1.5, -3, 4]}
         rotation={[0, 1.7, 0]}
       />
     </mesh>
