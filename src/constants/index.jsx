@@ -32,11 +32,13 @@ export const navLinks = [
   },
   { id: "contact", title: "Contact", icon: <FaEnvelope size={30} /> },
   {
+    id: "github",
     title: "Github",
     url: "https://github.com/JenJenUwU",
     icon: <FaGithub size={30} />,
   },
   {
+    id: "linkedin",
     title: "Linkedin",
     url: "https://www.linkedin.com/in/jay-lin-65599824b/",
     icon: <FaLinkedin size={30} />,
