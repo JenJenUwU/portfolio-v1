@@ -23,7 +23,7 @@ import threejs from "./tech/threejs.svg";
 
 import skywatch from "./company/skywatch.png";
 
-import carrent from "./carrent.png";
+import batchnorm from "./batchnorm.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
@@ -50,7 +50,7 @@ export {
   typescript,
   threejs,
   skywatch,
-  carrent,
+  batchnorm,
   jobit,
   tripguide,
 };

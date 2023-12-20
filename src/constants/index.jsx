@@ -1,6 +1,6 @@
 import {
   backend,
-  carrent,
+  batchnorm,
   creator,
   css,
   docker,
@@ -163,67 +163,59 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Speech Timeline Recognition",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "I used machine learning methods to automatically annotate the timing of each Chinese word in naturalistic speech. This was further used in a human neuroimaging database project sponsored by the UofT, NYCU, and Quanta Computer Inc. ",
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
+        name: "TypeScript",
         color: "pink-text-gradient",
       },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
       {
-        name: "react",
+        name: "ffmpeg",
         color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/JenJenUwU/speech-timeline-recognizer",
   },
   {
-    name: "Trip Guide",
+    name: "Batch Normalization Research",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "I used the method suggested by the paper on the effectiveness of batch normalization (Santurkar et al., NIPS 2018) to reproduce the results of the paper.",
     tags: [
       {
-        name: "nextjs",
+        name: "Python",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "PyTorch",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: batchnorm,
+    source_code_link: "https://github.com/JenJenUwU/batch-norm",
+  },
+  {
+    name: "ESP32-Cam Integrated with LCD Screen",
+    description:
+      "I created a portable camera that wires to a LCD screen where a user could connect to the camera via WiFi and view the camera feed while sending text message to the LCD screen.",
+    tags: [
+      {
+        name: "C",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Arduino",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
+        name: "Hardware",
         color: "pink-text-gradient",
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/JenJenUwU/esp32-Camera",
   },
 ];
 
