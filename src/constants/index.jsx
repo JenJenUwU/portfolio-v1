@@ -1,13 +1,4 @@
-import {
-  backend,
-  batchnorm,
-  creator,
-  speech,
-  mobile,
-  skywatch,
-  espcam,
-  web,
-} from "../assets";
+import { batchnorm, speech, skywatch, espcam } from "../assets";
 
 import { FaEnvelope, FaGithub, FaInfoCircle, FaLinkedin } from "react-icons/fa";
 
@@ -29,25 +20,6 @@ export const navLinks = [
     title: "Linkedin",
     url: "https://www.linkedin.com/in/jay-lin-65599824b/",
     icon: <FaLinkedin size={30} />,
-  },
-];
-
-const services = [
-  {
-    title: "Web Developer",
-    icon: web,
-  },
-  {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
-    title: "Backend Developer",
-    icon: backend,
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
   },
 ];
 
@@ -77,13 +49,24 @@ const testimonials = [
     link: "https://ins.nycu.edu.tw/index.php/en/institute-of-neuroscience-nycu/faculty/wenjui-kuo/",
   },
   {
-    reference: "",
+    reference:
+      "Jay is a brilliant young individual with a strong interest in computer science. I found Jay is unique, not in his technical skill but in his enthusiasm and action toward his dream at such a young age.",
     name: "Jp Yang",
     designation: "CEO of SkyWatch Inc.",
     image:
       "https://media.licdn.com/dms/image/C4D03AQHOlhGtKip9AQ/profile-displayphoto-shrink_800_800/0/1517573537053?e=1709164800&v=beta&t=oMPXMuGEg1U0LIo47pIoN3L-9M74wlDEucDNepeELjE",
     email: "jp.yang@skywatch24.com",
     link: "https://www.linkedin.com/in/jpyang-27aa9529/",
+  },
+  {
+    reference:
+      "Jay mastered both the complex theory of deep learning and the practical skills of building and training neural networks, typically covered in advanced university courses.",
+    name: "Stephen Zhang",
+    designation: "Graduate from UofT",
+    image:
+      "https://i.pinimg.com/564x/b8/9f/27/b89f270e2aee0577efc5e604f08132d1.jpg",
+    email: "stephenn.zhang@mail.utoronto.ca",
+    link: "https://www.linkedin.com/in/stephen-zhang-9052a9156/",
   },
 ];
 
@@ -145,4 +128,4 @@ const projects = [
   },
 ];
 
-export { services, experiences, testimonials, projects };
+export { experiences, testimonials, projects };

@@ -29,7 +29,7 @@ const FeedbackCard = ({
             <span className="blue-text-gradient">@</span> {name}
           </p>
           <p className="mt-1 text-secondary text-[12px]">{designation}</p>
-          <p className="mt-1 text-secondary text-[12px]">{email}</p>
+          <p className="mt-1 text-secondary text-[10px]">{email}</p>
         </div>
         <motion.div
           onClick={() => window.open(link, "_blank")}
@@ -38,7 +38,7 @@ const FeedbackCard = ({
           <img
             src={image}
             alt={`feedback_by-${name}`}
-            className="w-20 h-20 rounded-full object-cover"
+            className="w-12 h-12 rounded-full object-cover"
           />
         </motion.div>
       </div>
