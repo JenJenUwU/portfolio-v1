@@ -5,8 +5,6 @@ import { styles } from "../styles";
 import { fadeIn, textVariant } from "../utils/motion";
 import { testimonials } from "../constants";
 import StarWrapper from "../hoc/SectionWrapper.jsx";
-import { github } from "../assets/index.js";
-
 const FeedbackCard = ({
   index,
   reference,
