@@ -1,3 +1,4 @@
-import EarthCanvas from "./Earth";
+import FigureCanvas from "./Keqing.jsx";
 import IslandCanvas from "./Island.jsx";
-export { EarthCanvas, IslandCanvas };
+import ParticlesCanvas from "./Particles.jsx";
+export { FigureCanvas, IslandCanvas, ParticlesCanvas };

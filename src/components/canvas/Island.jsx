@@ -59,6 +59,7 @@ const IslandCanvas = () => {
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
+          enablePan={false}
           enableZoom={true}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 3}

@@ -8,6 +8,7 @@ import {
   Hero,
   Navbar,
   Works,
+  ParticlesCanvas,
 } from "./components";
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
         <Feedbacks />
         <div className="relative z-0">
           <Contact />
+          <ParticlesCanvas />
         </div>
       </div>
     </BrowserRouter>
