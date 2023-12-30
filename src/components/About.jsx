@@ -4,6 +4,7 @@ import { styles } from "../styles";
 import { fadeIn, textVariant } from "../utils/motion";
 import { FaFilePdf } from "react-icons/fa";
 import StarWrapper from "../hoc/SectionWrapper.jsx";
+import profileImage from "../assets/profile.png";
 
 const About = () => {
   return (
@@ -19,7 +20,7 @@ const About = () => {
       >
         <motion.img
           variants={fadeIn("", "", 0.1, 1)}
-          src={"/profile.png"}
+          src={profileImage}
           style={{ borderRadius: "50%" }}
           className="w-40 h-40 wave-border"
         />
