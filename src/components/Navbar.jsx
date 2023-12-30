@@ -40,7 +40,7 @@ const Navbar = () => {
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <motion.div whileHover={{ scale: 1.2 }}>
           <Link
-            to="/Developer-Portfolio/"
+            to="/"
             className={"flex items-center gap-2"}
             onClick={() => {
               setActive("");
