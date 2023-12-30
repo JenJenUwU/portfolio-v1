@@ -1,12 +1,6 @@
 import { batchnorm, speech, skywatch, espcam } from "../assets";
 
-import {
-  FaEnvelope,
-  FaGithub,
-  FaInfoCircle,
-  FaLinkedin,
-  FaFilePdf,
-} from "react-icons/fa";
+import { FaEnvelope, FaGithub, FaInfoCircle, FaLinkedin } from "react-icons/fa";
 
 export const navLinks = [
   {
@@ -15,11 +9,6 @@ export const navLinks = [
     icon: <FaInfoCircle size={30} />,
   },
   { hash: "contact", title: "Contact", icon: <FaEnvelope size={30} /> },
-  {
-    id: "resume",
-    title: "Resume",
-    icon: <FaFilePdf size={30} />,
-  },
   {
     id: "github",
     title: "Github",

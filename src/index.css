@@ -204,4 +204,16 @@
         -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.5),
         -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
     }
+
+}
+
+@keyframes wave-animation {
+  0% { border-radius: 60% 40% 30% 70%/60% 30% 70% 40%; }
+  50% { border-radius: 30% 60% 70% 40%/50% 60% 30% 60%; }
+  100% { border-radius: 60% 40% 30% 70%/60% 30% 70% 40%; }
+}
+
+.wave-border {
+  animation: wave-animation 3s infinite;
+  border: 5px solid #b9e0ff;
 }
