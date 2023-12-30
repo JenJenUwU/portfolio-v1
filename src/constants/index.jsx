@@ -10,15 +10,14 @@ import {
 
 export const navLinks = [
   {
-    id: "about",
+    hash: "about",
     title: "About",
     icon: <FaInfoCircle size={30} />,
   },
-  { id: "contact", title: "Contact", icon: <FaEnvelope size={30} /> },
+  { hash: "contact", title: "Contact", icon: <FaEnvelope size={30} /> },
   {
     id: "resume",
     title: "Resume",
-    url: "/Developer-Portfolio/resume",
     icon: <FaFilePdf size={30} />,
   },
   {

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants/index.jsx";
@@ -68,13 +69,23 @@ const Navbar = () => {
                 setActive(link.title);
               }}
             >
-              <a
-                href={link.url || `#${link.id}`}
-                target={link.url ? "_blank" : undefined}
-                rel={link.url ? "noopener noreferrer" : undefined}
-              >
-                <motion.div whileHover={{ scale: 1.2 }}>{link.icon}</motion.div>
-              </a>
+              {link.hash ? (
+                <HashLink smooth to={`/#${link.hash}`}>
+                  <motion.div whileHover={{ scale: 1.2 }}>
+                    {link.icon}
+                  </motion.div>
+                </HashLink>
+              ) : (
+                <a
+                  href={link.url || `#${link.id}`}
+                  target={link.url ? "_blank" : undefined}
+                  rel={link.url ? "noopener noreferrer" : undefined}
+                >
+                  <motion.div whileHover={{ scale: 1.2 }}>
+                    {link.icon}
+                  </motion.div>
+                </a>
+              )}
             </li>
           ))}
         </ul>
@@ -99,15 +110,23 @@ const Navbar = () => {
                   setActive(link.title);
                 }}
               >
-                <a
-                  href={link.url || `#${link.id}`}
-                  target={link.url ? "_blank" : undefined}
-                  rel={link.url ? "noopener noreferrer" : undefined}
-                >
-                  <motion.div whileHover={{ scale: 1.2 }}>
-                    {link.icon}
-                  </motion.div>
-                </a>
+                {link.hash ? (
+                  <HashLink smooth to={`/#${link.hash}`}>
+                    <motion.div whileHover={{ scale: 1.2 }}>
+                      {link.icon}
+                    </motion.div>
+                  </HashLink>
+                ) : (
+                  <a
+                    href={link.url || `#${link.id}`}
+                    target={link.url ? "_blank" : undefined}
+                    rel={link.url ? "noopener noreferrer" : undefined}
+                  >
+                    <motion.div whileHover={{ scale: 1.2 }}>
+                      {link.icon}
+                    </motion.div>
+                  </a>
+                )}
               </li>
             ))}
           </ul>
@@ -128,15 +147,23 @@ const Navbar = () => {
                     setActive(link.title);
                   }}
                 >
-                  <a
-                    href={link.url || `#${link.id}`}
-                    target={link.url ? "_blank" : undefined}
-                    rel={link.url ? "noopener noreferrer" : undefined}
-                  >
-                    <motion.div whileHover={{ scale: 1.2 }}>
-                      {link.icon}
-                    </motion.div>
-                  </a>
+                  {link.hash ? (
+                    <HashLink smooth to={`/#${link.hash}`}>
+                      <motion.div whileHover={{ scale: 1.2 }}>
+                        {link.icon}
+                      </motion.div>
+                    </HashLink>
+                  ) : (
+                    <a
+                      href={link.url || `#${link.id}`}
+                      target={link.url ? "_blank" : undefined}
+                      rel={link.url ? "noopener noreferrer" : undefined}
+                    >
+                      <motion.div whileHover={{ scale: 1.2 }}>
+                        {link.icon}
+                      </motion.div>
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
