@@ -52,7 +52,7 @@ const experiences = [
 const testimonials = [
   {
     reference: "",
-    name: "Wen-Jui Kuo",
+    name: "Dr. Wen-Jui Kuo",
     designation: "Professor at NYCU",
     image:
       "https://ins.nycu.edu.tw/wp-content/uploads/2021/11/%E9%83%AD%E6%96%87%E7%91%9E-Wen-Jui-Kuo-180x180.jpg",
