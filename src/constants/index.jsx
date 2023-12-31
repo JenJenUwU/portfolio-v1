@@ -40,7 +40,8 @@ const experiences = [
 
 const testimonials = [
   {
-    reference: "",
+    reference:
+      "Jay was able to come up with distinctive solutions when encountering daunting challenges. Jay also demonstrated his communication ability by expressing those ideas to others.",
     name: "Dr. Wen-Jui Kuo",
     designation: "Professor at NYCU",
     image:
@@ -60,7 +61,7 @@ const testimonials = [
   },
   {
     reference:
-      "Jay mastered both the complex theory of deep learning and the practical skills of building and training neural networks, typically covered in advanced university courses.",
+      "Jay mastered the complex theory of deep learning and the practical skills of building and training neural networks, typically covered in advanced university courses.",
     name: "Stephen Zhang",
     designation: "Graduate from UofT",
     image:
