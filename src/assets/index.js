@@ -7,5 +7,16 @@ import skywatch from "./company/skywatch.png";
 import batchnorm from "./batchnorm.png";
 import speech from "./speech.png";
 import espcam from "./espcam.png";
+import slides from "./slides.png";
 
-export { logo, github, menu, close, skywatch, batchnorm, speech, espcam };
+export {
+  logo,
+  github,
+  menu,
+  close,
+  skywatch,
+  batchnorm,
+  speech,
+  espcam,
+  slides,
+};

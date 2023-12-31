@@ -36,11 +36,11 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className={"mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"}
       >
-        I'm a grade 12 high school student who is interested in both software
-        and hardware developing. I specialize in programming language and
-        frameworks of Python, Javascript, Java and C. I am looking forward to
-        learn more about myself and computer related topics through experience
-        and opportunities in the future!
+        I am a Grade 12 high school student with a keen interest in software and
+        hardware development. I have expertise in programming languages and
+        frameworks such as Python, Javascript, Java, and C. I am enthusiastic
+        about exploring the fields of quantum computing and computer science in
+        my future studies!
       </motion.p>
     </>
   );

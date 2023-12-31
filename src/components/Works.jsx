@@ -14,13 +14,13 @@ const ProjectCard = ({
   description,
   tags,
   image,
-  source_code_link,
+  links, // changed from source_code_link to links
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
         options={{
-          max: 45,
+          max: 15,
           scale: 1,
           speed: 450,
         }}
@@ -34,16 +34,25 @@ const ProjectCard = ({
           />
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-            >
-              <img
-                src={github}
-                alt="source code"
-                className="w-1/2 h-1/2 object-contain"
-              />
-            </div>
+            {links.map(
+              (
+                link,
+                index, // map over the links array
+              ) => (
+                <motion.div
+                  key={index}
+                  onClick={() => window.open(link.url, "_blank")}
+                  className="bg-primary w-10 h-10 rounded-full flex justify-center items-center cursor-pointer mr-2"
+                  whileHover={{ scale: 1.3 }}
+                >
+                  <img
+                    src={link.icon}
+                    alt="link icon"
+                    className="w-1/2 h-1/2 object-contain"
+                  />
+                </motion.div>
+              ),
+            )}
           </div>
         </div>
 

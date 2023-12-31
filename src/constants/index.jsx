@@ -1,4 +1,4 @@
-import { batchnorm, speech, skywatch, espcam } from "../assets";
+import { batchnorm, speech, skywatch, espcam, github, slides } from "../assets";
 
 import { FaEnvelope, FaGithub, FaInfoCircle, FaLinkedin } from "react-icons/fa";
 
@@ -75,7 +75,7 @@ const projects = [
   {
     name: "Speech Timeline Recognition",
     description:
-      "I used machine learning methods to automatically annotate the timing of each Chinese word in naturalistic speech. This was further used in a human neuroimaging database project sponsored by the UofT, NYCU, and Quanta Computer Inc. ",
+      "The program automatically annotate the timing of each Chinese word in naturalistic speech. This was further used in a human neuroimaging database project sponsored by the UofT, NYCU, and Quanta Computer Inc. ",
     tags: [
       {
         name: "TypeScript",
@@ -87,12 +87,18 @@ const projects = [
       },
     ],
     image: speech,
-    source_code_link: "https://github.com/JenJenUwU/speech-timeline-recognizer",
+    links: [
+      {
+        url: "https://github.com/JenJenUwU/speech-timeline-recognizer",
+        icon: github,
+      },
+    ],
+    //source_code_link: "https://github.com/JenJenUwU/speech-timeline-recognizer",
   },
   {
     name: "Batch Normalization Research",
     description:
-      "I used the method suggested by the paper on the effectiveness of batch normalization (Santurkar et al., NIPS 2018) to reproduce the results of the paper.",
+      "I researched the hypothesis that batch normalization's normalizing process does not correlate with improved accuracy, as stated by (Santurkar et al., NIPS 2018).",
     tags: [
       {
         name: "Python",
@@ -104,7 +110,17 @@ const projects = [
       },
     ],
     image: batchnorm,
-    source_code_link: "https://github.com/JenJenUwU/batch-norm",
+    links: [
+      {
+        url: "https://docs.google.com/presentation/d/1XEVcSGmIluUepcGGvRJsghMlTBKJAYssaav62kCBzUo/edit?usp=sharing",
+        icon: slides,
+      },
+      {
+        url: "https://github.com/JenJenUwU/batch-norm",
+        icon: github,
+      },
+    ],
+    //source_code_link: "https://github.com/JenJenUwU/batch-norm",
   },
   {
     name: "ESP32-Cam Integrated with LCD Screen",
@@ -125,7 +141,12 @@ const projects = [
       },
     ],
     image: espcam,
-    source_code_link: "https://github.com/JenJenUwU/esp32-Camera",
+    links: [
+      {
+        url: "https://github.com/JenJenUwU/esp32-Camera",
+        icon: github,
+      },
+    ],
   },
 ];
 
