@@ -1,10 +1,26 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { IslandCanvas } from "./canvas";
 import { HashLink } from "react-router-hash-link";
+import React, { useEffect, useRef } from "react";
+import Typed from "typed.js";
 
 const Hero = () => {
+  const el = useRef(null);
+
+  useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ["Jay"],
+      typeSpeed: 200,
+      backSpeed: 100,
+      loop: true,
+    });
+
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
   return (
     <section className={"relative w-full h-screen mx-auto"}>
       <div
@@ -16,8 +32,7 @@ const Hero = () => {
         </div>
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm
-            <span className={"text-secondary"}> Jay</span>
+            Hi, I'm <span className={"text-secondary"} ref={el}></span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             I'm a high school student <br className="sm:block hidden" />
