@@ -19,7 +19,7 @@ const About = () => {
       >
         <motion.img
           variants={fadeIn("", "", 0.1, 1)}
-          src={"/Developer-Portfolio/profile.png"}
+          src={"/portfolio-v1/profile.png"}
           style={{ borderRadius: "50%" }}
           className="w-40 h-40 wave-border"
         />
