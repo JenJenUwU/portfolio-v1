@@ -35,7 +35,7 @@ const Hero = () => {
             Hi, I'm <span className={"text-secondary"} ref={el}></span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I'm a high school student <br className="sm:block hidden" />
+            I'm an engineering student <br className="sm:block hidden" />
             who loves to craft and code.
           </p>
         </div>

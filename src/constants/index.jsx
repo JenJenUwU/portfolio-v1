@@ -86,8 +86,8 @@ const projects = [
     name: "Speech Timeline Recognition",
     description:
       "Automatically annotate the timing of each Chinese word in naturalistic speech, used in a human neuroimaging database project sponsored by the UofT, NYCU and Quanta Computer Inc.",
-    /*
     tags: [
+      /*
       {
         name: "TypeScript",
         color: "pink-text-gradient",
@@ -96,8 +96,8 @@ const projects = [
         name: "ffmpeg",
         color: "blue-text-gradient",
       },
+      */
     ],
-     */
     image: speech,
     links: [
       {
@@ -110,8 +110,8 @@ const projects = [
     name: "Batch Normalization Research",
     description:
       "I researched the hypothesis that batch normalization's normalizing process does not correlate with improved accuracy, as stated by (Santurkar et al., NIPS 2018).",
-    /*
     tags: [
+      /*
       {
         name: "Python",
         color: "pink-text-gradient",
@@ -120,8 +120,8 @@ const projects = [
         name: "PyTorch",
         color: "blue-text-gradient",
       },
+      */
     ],
-     */
     image: batchnorm,
     links: [
       {
@@ -138,8 +138,8 @@ const projects = [
     name: "ESP32-Cam Integrated with LCD Screen",
     description:
       "I created a portable camera that wires to an LCD screen where a user could connect to the camera via WiFi and view the camera feed while sending text messages to the LCD screen.",
-    /*
     tags: [
+      /*
       {
         name: "C",
         color: "pink-text-gradient",
@@ -152,8 +152,8 @@ const projects = [
         name: "Hardware",
         color: "pink-text-gradient",
       },
+      */
     ],
-     */
     image: espcam,
     links: [
       {
