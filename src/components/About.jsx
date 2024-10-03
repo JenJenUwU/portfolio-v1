@@ -36,11 +36,11 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className={"mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"}
       >
-        I am a Grade 12 high school student with a keen interest in software and
-        hardware development. I have expertise in programming languages and
-        frameworks such as Python, Javascript, Java, and C. I am enthusiastic
-        about exploring the fields of quantum computing and computer science in
-        my future studies!
+        I am an engineering student from the University of Toronto who is
+        interested in electrical and computer engineering. I have expertise in
+        programming languages and frameworks such as Python, Javascript, Java,
+        and C. I am enthusiastic about exploring the fields of quantum computing
+        and computer science in my future studies!
       </motion.p>
     </>
   );

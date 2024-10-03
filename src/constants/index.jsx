@@ -31,9 +31,19 @@ const experiences = [
     iconBg: "#213053",
     date: "June 2023 - August 2023",
     points: [
-      "Developing on screen display for public view monitors using C and the LVGL library.",
-      "Collaborating and communicating with a team including product managers, and other developers to learn project communication in the tech industry.",
-      "Properly documenting code and organize code for easier future adjustments.",
+      "Developed an on-screen display for public view monitors using C and the LVGL library.",
+      "Learned tech industry projected communication standards via collaboration and communication with the team.",
+      "Learned standard documentation process for clear communication.",
+    ],
+  },
+  {
+    title: "Electrical Engineer Summer Intern",
+    company_name: "TIMWAVE Ltd.",
+    iconBg: "#213053",
+    date: "July 2024 - August 2024",
+    points: [
+      "Developed an analog radar module from scratch through Arduino and KiCad.",
+      "Learned and implemented the theory of Frequency Modulated Continuous Wave radar and Doppler radar.",
     ],
   },
 ];
@@ -55,7 +65,7 @@ const testimonials = [
     name: "Jp Yang",
     designation: "CEO of SkyWatch Inc.",
     image:
-      "https://media.licdn.com/dms/image/C4D03AQHOlhGtKip9AQ/profile-displayphoto-shrink_800_800/0/1517573537053?e=1709164800&v=beta&t=oMPXMuGEg1U0LIo47pIoN3L-9M74wlDEucDNepeELjE",
+      "https://media.licdn.com/dms/image/v2/C4D03AQHOlhGtKip9AQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1517573537053?e=1733356800&v=beta&t=057t5UatzQUAHz1ky0-tnZULcRvRcrPOYK9-vD77VxE",
     email: "jp.yang@skywatch24.com",
     link: "https://www.linkedin.com/in/jpyang-27aa9529/",
   },
@@ -75,7 +85,8 @@ const projects = [
   {
     name: "Speech Timeline Recognition",
     description:
-      "The program automatically annotate the timing of each Chinese word in naturalistic speech. This was further used in a human neuroimaging database project sponsored by the UofT, NYCU, and Quanta Computer Inc. ",
+      "Automatically annotate the timing of each Chinese word in naturalistic speech, used in a human neuroimaging database project sponsored by the UofT, NYCU and Quanta Computer Inc.",
+    /*
     tags: [
       {
         name: "TypeScript",
@@ -86,6 +97,7 @@ const projects = [
         color: "blue-text-gradient",
       },
     ],
+     */
     image: speech,
     links: [
       {
@@ -93,12 +105,12 @@ const projects = [
         icon: github,
       },
     ],
-    //source_code_link: "https://github.com/JenJenUwU/speech-timeline-recognizer",
   },
   {
     name: "Batch Normalization Research",
     description:
       "I researched the hypothesis that batch normalization's normalizing process does not correlate with improved accuracy, as stated by (Santurkar et al., NIPS 2018).",
+    /*
     tags: [
       {
         name: "Python",
@@ -109,6 +121,7 @@ const projects = [
         color: "blue-text-gradient",
       },
     ],
+     */
     image: batchnorm,
     links: [
       {
@@ -120,12 +133,12 @@ const projects = [
         icon: github,
       },
     ],
-    //source_code_link: "https://github.com/JenJenUwU/batch-norm",
   },
   {
     name: "ESP32-Cam Integrated with LCD Screen",
     description:
-      "I created a portable camera that wires to a LCD screen where a user could connect to the camera via WiFi and view the camera feed while sending text message to the LCD screen.",
+      "I created a portable camera that wires to an LCD screen where a user could connect to the camera via WiFi and view the camera feed while sending text messages to the LCD screen.",
+    /*
     tags: [
       {
         name: "C",
@@ -140,6 +153,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
+     */
     image: espcam,
     links: [
       {
